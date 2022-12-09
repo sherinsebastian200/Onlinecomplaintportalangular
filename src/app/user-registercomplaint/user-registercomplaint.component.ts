@@ -25,4 +25,5 @@ export class UserRegistercomplaintComponent {
     console.log(data)
   }
 
+
 }
