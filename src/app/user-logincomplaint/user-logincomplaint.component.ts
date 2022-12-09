@@ -8,11 +8,20 @@ import { Component } from '@angular/core';
 export class UserLogincomplaintComponent {
   email=""
   password=""
-  readValue=()=>
-  {
-    let data:any= {
-      "email":this.email,"password":this.password
+  
+  readValue = ()=>{
+    let data:any = {
+      "email":this.email,
+      "password":this.password
     }
-    console.log(data)
+    this.api.userLogin(data).subscribe(
+      (response:any) =>{
+        if(response.status == "success"){
+          localStorage.setItem("userInfo",response.userId)
+        }else{
+          alert("login failed")
+        }
+      }
+    )
   }
 }
