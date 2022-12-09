@@ -1,0 +1,56 @@
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://img.freepik.com/free-photo/young-woman-studying-library_1303-19014.jpg?w=2000" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.crl.edu/sites/all/themes/crl_bootstrap/images/hero3.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.freepik.com/free-photo/friends-learning-study-group_23-2149257202.jpg?w=2000" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h1 class="text-dark">Administrator Login</h1>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                  <label for="" class="form-label">User Name</label>
+                  <input name="username" [(ngModel)]="username" type="text" class="form-control">
+
+              </div>
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                  <label for="" class="form-label ">Password</label>
+                  <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
+
+              </div>
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                 <button (click)="readValue()" class="btn btn-primary">Login</button>
+
+              </div>
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                  <a routerLink="/register" >User Registration </a>
+                 
+
+              </div>
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                  <a routerLink="/login" >User Login</a>
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
