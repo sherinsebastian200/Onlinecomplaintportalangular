@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminLogincomplaintComponent } from './admin-logincomplaint/admin-logincomplaint.component';
 import { UserLogincomplaintComponent } from './user-logincomplaint/user-logincomplaint.component';
+import { UserRegistercomplaintComponent } from './user-registercomplaint/user-registercomplaint.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLogincomplaintComponent,
-    UserLogincomplaintComponent
+    UserLogincomplaintComponent,
+    UserRegistercomplaintComponent
   ],
   imports: [
     BrowserModule,
